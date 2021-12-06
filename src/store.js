@@ -98,7 +98,7 @@ class Store {
                 ...this.state,
                 cart: this.state.cart.map((el) => {
                     if (el.code === code) {
-                        el.count++
+                        el.count = el.count + 1
                     }
                     return el
                 }),
