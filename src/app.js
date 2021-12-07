@@ -20,6 +20,8 @@ function App({ store }) {
             [store]
         ),
     }
+
+    console.log(store.getState(), "state")
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
     return (

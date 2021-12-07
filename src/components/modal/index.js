@@ -30,7 +30,7 @@ const Modal = ({ isOpen, setIsOpen, cart }) => {
                 <div className="modal__content">
                     {cart.map((item, i) => {
                         return (
-                            <div className="modal__item" key={item.code}>
+                            <div className="modal__item" key={item.title}>
                                 <div style={{ marginRight: 20 }}>{i + 1}</div>
                                 <div style={{ flex: 1 }}>{item.title}</div>
                                 <div style={{ marginRight: 55 }}>

@@ -10,13 +10,13 @@ const root = document.getElementById("app")
 // Состояние приложения
 const store = new Store({
     items: [
-        { code: 1, title: "Название товара", price: 100, count: 1 },
-        { code: 2, title: "Книга про React", price: 770, count: 1 },
-        { code: 3, title: "Хлеб", price: 43, count: 1 },
-        { code: 4, title: "Трактор", price: 7654320, count: 1 },
-        { code: 5, title: "Телефон", price: 120000, count: 1 },
-        { code: 6, title: "Карандаши цветные", price: 111, count: 1 },
-        { code: 7, title: "Товар сюрприз", price: 0, count: 1 },
+        { code: 1, title: "Название товара", price: 100 },
+        { code: 2, title: "Книга про React", price: 770 },
+        { code: 3, title: "Хлеб", price: 43 },
+        { code: 4, title: "Трактор", price: 7654320 },
+        { code: 5, title: "Телефон", price: 120000 },
+        { code: 6, title: "Карандаши цветные", price: 111 },
+        { code: 7, title: "Товар сюрприз", price: 0 },
     ],
     cart: [],
 })

@@ -87,23 +87,21 @@ class Store {
 
     addToCardItem(code) {
         const newItem = this.state.items.filter((item) => item.code === code)
-        if (!this.state.cart.includes(newItem[0])) {
+        if (this.state?.cart[code - 1]?.title === newItem.title) {
             this.setState({
                 ...this.state,
-                cart: [...this.state.cart, newItem[0]],
+                cart: [...this.state.cart, { ...newItem[0], count: 1 }],
             })
-            console.log(this.state)
         } else {
             this.setState({
                 ...this.state,
                 cart: this.state.cart.map((el) => {
                     if (el.code === code) {
-                        el.count = el.count + 1
+                        return { ...el, count: el.count + 1 }
                     }
                     return el
                 }),
             })
-            // console.log("+1")
         }
     }
 }
